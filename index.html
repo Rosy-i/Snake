@@ -8,14 +8,25 @@
     <title>Snake game</title>
     <style>
         canvas {
+            position: absolute;
             border: 1px solid black;
+        }
+        
+        #snake-player {
+            z-index: 10;
+        }
+        
+        #food-layer {
+            z-index: 5;
         }
     </style>
 </head>
 
 <body>
-    <canvas id="snake-game"></canvas>
-    <script src="main.js"></script>
+    <canvas id="snake-player"></canvas>
+    <canvas id="food-layer"></canvas>
+    <script src="scripts/main.js"></script>
+    <audio src="audio/7403.mp3" type="audio/mp3" id="end-song"></audio>
 </body>
 
 </html>
